@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --tipografia_gruesa: "Sigmar", serif;
+    --tipografia_delgada: "Lato", serif;
+    --negro: #23272a;
+    --Blanco: #ffffff;
+    --gris: #CCCCCC;
+}
+body{
+    /* font-family: var(--tipografia_delgada); */
+    font-size: 16px;
+    line-height: 24px;
+    /* background-color: gray; */
+    /* color: #333; */
+}
+html{
+    scroll-behavior: smooth;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+    /* border: 2px red solid; */
+}
+
+.margen{
+    /* padding: 15px; */
+}
+
+
+.contenedor_cabecera{
+    /* border: 1px blue solid; */
+}
+.contenedor_cabecera_padre{
+    /* border:1px red solid; */
+   
+}
+.contenedor_cabecera_logo{
+    display: flex;
+    justify-content: center;
+    /* border: 2px violet solid; */
+}
+
+.contenedor_cabecera_logo img{
+    max-width: 200px;
+}
+
+.contenedor_cabecera_menu ul{
+    list-style: none;
+    border-top: 3px var(--gris) solid;
+    /* padding: 5px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+.contenedor_cabecera_menu ul li{
+    /* border: 2px red solid; */
+}
+
+.contenedor_cabecera_menu ul li a{
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--negro);
+
+}
+.borde_derecho{
+    border-right: 5px var(--gris) solid;
+}
+
+.contenedor_slide{
+    /* border: 1px red solid; */
+    padding: 0%;
+}
+.contenedor_slide figure{
+    max-width: 1200px;
+    margin: auto;
+}
+.contenedor_slide figure img{
+    max-width: 100%;
+    display: block;
+
+}
+
+ .contenedor_slide_texto_foto{
+   position: relative;
+   width: 100%;
+}
+
+.contenedor_slide_texto_foto figure {
+    margin: 0; /* Elimina márgenes predeterminados */
+    position: relative;
+}
+
+.contenedor_slide_texto_foto img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    display: block; /* Evitar el espacio debajo de la imagen */
+}
+
+/* Estilo del texto sobre la imagen */
+.contenedor_slide_texto_foto p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color:var(--negro);
+    background-color: rgba(255, 253, 253, 0.5); /* Fondo semi-transparente */
+    padding: 10px 20px;
+    font-size: 50px; /* Tamaño de fuente adecuado para pantallas grandes */
+    text-align: center;
+    /* border-radius: 10px; */
+}
+
+.contenedor_slide_banner_inferior{
+    background-color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.contenedor_slide_banner_inferior h2{
+    color: var(--Blanco);
+}
+
+
+
+.seccion_dos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+
+.articulos {
+    width: 25%;
+    text-align: center;
+    background:#CCCCCC;
+    padding: 15px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.articulos figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.articulos img {
+    width: 120px; /* Tamaño fijo para las imágenes */
+    height: 120px;
+    border-radius: 50%; /* Hace las imágenes circulares */
+    object-fit: cover;
+}
+
+.articulos h3 {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.articulos a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: grey;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.articulos a:hover {
+    background: rgb(119, 117, 117);
+}
+
+footer {
+    background-color: #ffffff; 
+    padding: 20px;
+    
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px;
+    margin: auto; 
+    border-top: var(--gris);
+    /* margin-top: 30px; */
+}
+
+footer figure img {
+    max-width: 150px; 
+}
+
+footer div div {
+    display: flex;
+    gap: 15px; 
+}
+
+footer a {
+    color: gray;
+    font-size: 20px;
+    text-decoration: none;
+}
