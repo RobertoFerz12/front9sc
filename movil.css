@@ -40,5 +40,9 @@
     .contenedor_cabecera_menu ul li{
         border-top: 2px var(--gris) solid;
     }
-    .contenedor_cabecera_menu ul{}
+    footer {
+        background-color: #ffffff; 
+        padding: 20px;
+        
+    }
 }
